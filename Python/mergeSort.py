@@ -7,40 +7,42 @@ Created on Tue Oct 15 15:47:05 2019
 
 a = [4,5,6,2,3,1]
 
-def mergeSort(a, l, r):
+def mergeSort(a):
+    if(len(a)>1):
+        mid = len(a)//2
     
-    mid = (l+r)//2
-    
-    L = a[:mid]
-    R = a[mid:]
-    
-    mergeSort(L, l, mid)
-    mergeSort(R, mid, r)
-    
-    i = j = k = 0
-    
-    while(i < l and j < r):
-        if(L[i] < R[j]):
-            a[k] = L[i]
-            i += 1
-            k += 1
-        else:
-            a[k] = R[j]
-            j += 1
-            k += 1
-            
+        L = a[:mid]
+        R = a[mid:]
+        
+        mergeSort(L)
+        mergeSort(R)
+        
+        l = len(L)
+        r = len(R)
+        i = j = k = 0
+        
+        while(i < l and j < r):
+            if(L[i] < R[j]):
+                a[k] = L[i]
+                i += 1
+                k += 1
+            else:
+                a[k] = R[j]
+                j += 1
+                k += 1
+                
         while i < l: 
             a[k] = L[i] 
             i+=1
             k+=1
-          
+              
         while j < r: 
             a[k] = R[j] 
             j+=1
             k+=1
+        
     
-    
-mergeSort(a, 0, len(a))
+mergeSort(a)
 print(a)
 
 

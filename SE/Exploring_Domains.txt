@@ -1,0 +1,47 @@
+Password Management Systems
+  Features and Functionality
+    •	Encryption
+    •	Password Sharing
+    •	Convenient Reminders to change passwords
+    •	Suggesting High entropy passwords
+  Use Cases
+    •	Employees in an organisation
+      o	Large Scale organisations
+      o	Small Scale organisations
+    •	Personal Use
+
+Time Management Software
+  Features and Functionality
+    •	Daily Tasks
+    •	Maintenance Tasks
+      o	Priority System
+    •	Habits
+    •	One Time Todo
+    •	Rewards
+      o	Achievement Systems
+      o	External Rewards
+  Use Cases
+    •	Managing Employees in an organisation
+      o	Large Scale organisations
+      o	Small Scale organisations
+    •	Personal Use
+
+Note Taking Software
+  Features and Functionality
+    •	Adding Notes
+    •	Categories
+      o	Hierarchies
+      o	Tags
+    •	Linking
+    •	Permissions
+    •	Sharing Notes
+    •	Multimedia Notes
+    •	Reminders
+    •	Meta data
+    •	Searching in notes
+    •	Import Export
+  Use Cases
+    •	Organisations
+      o	Large Scale
+      o	Small Scale
+    •	Personal

@@ -22,14 +22,14 @@ Password Management Systems
     
 
 
-  	1. Create Account -
-      Enter Personal Details.
-      Obtain email-ID, phone number.
-      Enter new password twice.
-      Enter encryption key twice.
-      Verify Captcha.
-      Accept Privacy Policy and T&C.
-      Verify with OTP.
+   1. Create Account -
+              Enter Personal Details.
+              Obtain email-ID, phone number.
+              Enter new password twice.
+              Enter encryption key twice.
+              Verify Captcha.
+              Accept Privacy Policy and T&C.
+              Verify with OTP.
       
       Login.
         - Challenge based authentication.

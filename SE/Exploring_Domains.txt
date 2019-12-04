@@ -1,30 +1,199 @@
 Password Management Systems
-  Features and Functionality
-    •	Encryption
+
+  Features
+    •	Master Password for the account
+    •	2 Factor Authentication
+    •	Encrypting all the passwords (Independent of master password)
     •	Password Sharing
+    •	Structured data
+    •	Searching
     •	Convenient Reminders to change passwords
     •	Suggesting High entropy passwords
+    •	Browser plugin, browser integration
+    •	Stored in the cloud
+    •	Web/Mobile/Desktop clients.
+    •	Import/Export, Backup/Restore
+    
   Use Cases
     •	Employees in an organisation
       o	Large Scale organisations
       o	Small Scale organisations
     •	Personal Use
+    
+
+
+  	1. Create Account -
+      Enter Personal Details.
+      Obtain email-ID, phone number.
+      Enter new password twice.
+      Enter encryption key twice.
+      Verify Captcha.
+      Accept Privacy Policy and T&C.
+      Verify with OTP.
+      
+      Login.
+        - Challenge based authentication.
+        - First login : Configure the account.
+	      - Optional n step authentication
+	      - Unlock passwords
+      
+    2. Configure the Account	
+	     Enable/Disable n step auth.
+	      Specify secure device
+	      Appearance/Themes
+	      Reminder Frequency
+	      Default new password preferences
+
+    3. Add Passwords
+	      Add:
+		      Title, website URL, username, etc.
+	      Type password, or
+	      Suggest Password with constraints: size/alphanumeric/spl char/unicode/entropy
+	      Choose categories
+	      Configure Owner, Sharing, Permissions, etc.
+	      Add Optional Notes.
+
+    4. Remind User
+	      Implement notification queue
+	      Auto-suggest password/copy to clipboard when notification is clicked.
+
+    5. Shared Password
+	      Share with other users/groups.
+
+    6. Batch selection/modifications
+	      Search
+	      Actions
+
+    7. Create Group/ Invite to group
+	      Creator is admin
+	      Create Invite Link.
+
+    8. Create Category
+	      Category Name
+	      [Category Parent]
+	      Sync category with these users/groups:
+	      Force syncing on/off on all children
+
+    9. Import Export Data
+      	Into CSV, Keepass, etc.
+
+    
+    
+    
+    
 
 Time Management Software
   Features and Functionality
     •	Daily Tasks
+      o	Priority System
+      o	Categories
     •	Maintenance Tasks
       o	Priority System
+      o	Categories
     •	Habits
+    •	Searching
     •	One Time Todo
+    • Miscelleneous Tasks (Repetitive Tasks, as specified)
     •	Rewards
       o	Achievement Systems
       o	External Rewards
+    •	Statistics (Performance Metrics, etc.)
+    •	Browser plugin, browser integration
+    •	Stored in the cloud
+    •	Web/Mobile/Desktop clients.
+    •	Import/Export, Backup/Restore
   Use Cases
     •	Managing Employees in an organisation
       o	Large Scale organisations
       o	Small Scale organisations
     •	Personal Use
+
+    1. Create Account -
+        Enter Personal Details.
+        Obtain email-ID, phone number.
+        Enter new password twice.
+        Verify Captcha.
+        Accept Privacy Policy and T&C.
+        Verify with OTP.
+      
+      Login.
+         - Challenge based authentication.
+         - First login : Configure the account.
+        - Optional n step authentication
+      
+    2. Configure the Account
+	
+	      Enable/Disable n step auth.
+	      Appearance/Themes
+
+    3. Add Category
+	      Category Name.
+	      [Category Parent]
+	      Collective Priority.
+	      Force changes on children.
+
+    4. Add Task
+	      4.1	Daily Tasks
+		        Name of task
+		        Choose Category, priority
+		        Schedule
+        		Notes
+		        Deadlines
+		        Choose reminder settings
+
+	      4.2	Maintenance Tasks
+		        Name of task
+		        Choose Category, priority
+		        Schedule
+		        Notes.
+		        Deadlines
+		        Choose reminder settings
+
+	      4.3	Habits
+		        Name of habit
+		        Choose Category, priority
+		        Schedule
+		        Notes.
+		        Deadlines
+        		Choose reminder settings
+            
+	      4.4	To do Items
+		        Name of task
+		        Choose Category, priority
+		        Notes.
+		        Deadlines
+		        Choose reminder settings
+		
+     5. Add Milestones
+	      Choose task name.
+	      Specify condition.
+	      Specify reward.
+
+     6. Choose achievement rewards
+	      Streaks, etc.
+
+     7. Searching in tasks
+	      Filters
+
+      8. Batch selection/modifications
+	        Search
+        	Action
+
+      9. Import/Export Data
+	        Text/word/pdf files
+          
+      10. Display Performance metrics
+          Streaks
+          Breaks
+          Missed Deadlines
+          Analysis
+
+
+
+
+
+
+
 
 Note Taking Software
   Features and Functionality
@@ -39,9 +208,60 @@ Note Taking Software
     •	Reminders
     •	Meta data
     •	Searching in notes
-    •	Import Export
+    •	Browser plugin, browser integration
+    •	Stored in the cloud
+    •	Web/Mobile/Desktop clients.
+    •	Import/Export, Backup/Restore
   Use Cases
     •	Organisations
       o	Large Scale
       o	Small Scale
     •	Personal
+    
+ 
+
+    1. Create Account -
+       Enter Personal Details.
+        Obtain email-ID, phone number.
+        Enter new password twice.
+        Verify Captcha.
+        Accept Privacy Policy and T&C.
+        Verify with OTP.
+      
+        Login.
+         - Challenge based authentication.
+         - First login : Configure the account.
+         - Optional n step authentication
+      
+    2. Configure the Account
+	      Enable/Disable n step auth.
+	      Appearance/Themes
+
+    3. Add Notes
+	      Title
+	      Type of Note: (text/image/video/recording/document)
+	      Choose OCR on images?
+	      Rich Text Body
+	      Choose Categories
+	      Footnotes, personal notes, annotations
+	      Link
+	      Reminders
+
+    4. Add Category
+	      Category Name
+	      [Category Parent]
+
+    5. Modify Notes
+	      Check permissions
+	      Allow only permitted changes
+	      Save
+
+    6. Searching in notes
+	      Filters
+
+    7. Batch selection/modifications
+	      Search
+	      Action
+
+    8. Import/Export Data
+	      Text, Rich Text, word, pdf, etc.

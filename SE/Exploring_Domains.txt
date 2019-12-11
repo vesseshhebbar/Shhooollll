@@ -11,6 +11,7 @@ Password Management Systems
     •	Suggesting High entropy passwords
     •	Browser plugin, browser integration
     •	Stored in the cloud
+    •   Auto fill forms
     •	Web/Mobile/Desktop clients.
     •	Import/Export, Backup/Restore
     

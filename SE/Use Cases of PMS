@@ -1,0 +1,88 @@
+Use Case: Create an account.
+Primary Actor: User
+Scope:    Account Creation and Configuration.
+Level: ! User goal
+Brief:  A new member creates an account in the service after downloading the appropriate client.
+
+Stakeholders:   --
+Post conditions:
+	Minimal guarantees - The user sees the webpage saying that email has been sent to his email id.
+	Success Guarantees - User sees a webpage saying account creation successful.
+	
+Preconditions:
+	The sign up link is displayed on the homepage of the website/app/software.
+Triggers:
+	The user clicks the sign up link/button.
+
+Basic Flow:
+	User clicks sign up.
+	User fills form.
+	User chooses secure password.
+	User agrees to T&C and Privacy Policy
+	User clicks captcha
+	Verifies with OTP
+	
+Extensions:
+	Choose secure, memorable password:
+		Choose constraints of password.
+			Character count.
+			Character types.
+			Restrict to English words only (not recommended)
+			Restrict to custom dictionary only. (not recommended)
+			Scramble the password
+			
+Use Case: Account Configuration.
+Primary Actor:  User
+Scope:    Account creation and configuration.
+Level: ! User goal
+Brief: A new member customizes and personalize their account to best suit their preferences. Some changes can be previewed.
+
+Stakeholders: --
+Post Conditions:
+	Minimal guarantees: --
+	Success guarantees:  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/*	when the days are cold, and the cards all fold, and the saints we see are all made of gold.
+When your dreams all fail, and the ones we hail, are the worst of all, and the blood's run stale.
+
+I want to hide the truth, I want to shelter you, But i   */

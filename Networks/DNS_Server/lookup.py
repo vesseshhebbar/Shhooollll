@@ -1,0 +1,1 @@
+mydict = {'google.com': '8.8.8.8', 'cutn.ac.in': '14.139.182.249'}

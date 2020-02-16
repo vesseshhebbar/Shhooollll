@@ -18,7 +18,7 @@ UDP_PORT = 5005
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
 sock.bind(( UDP_IP_ADDRESS, UDP_PORT))
 
-#dict = eval(open("lookup.txt").read())
+dict = eval(open("lookup.txt").read())
 
 while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes

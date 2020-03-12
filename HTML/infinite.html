@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+var sum;
+x = 1; sum = 0;
+
+
+	sum+=x;
+    x += 1;
+
+document.write(sum);
+document.write("<br> ")
+
+var i = 0;
+while (0)
+{
+document.write(i + ", ");
+i = i+2;
+}
+
+
+function f()
+{
+	var x = document.getElementById("n");
+    var y = document.getElementById("m");
+    y.value = x.value * x.value;
+}
+
+
+min = Number.MAX_SAFE_INTEGER;
+max = Number.MIN_SAFE_INTEGER;
+
+var gc = 1;
+
+while(gc <= 3)
+{	val = prompt()
+	if(val < min)
+    	min = val;
+    if(val > min)
+    	max = val;
+	gc = gc + 1;
+}
+
+document.write(min + " , " + max);
+
+{ x = 12;
+let y = 3;  }
+document.write(x);
+document.write(y);
+
+function add(a,b) { 	document.write(a + b + ", "); }
+function sub(a,b) { 	document.write(a - b + ", "); }
+function mul(a,b) { 	document.write(a * b + ", "); }
+function div(a,b) { 	document.write(a / b  + ", "); }
+
+x = Number(prompt("Enter 1st number: "));
+y = Number(prompt("Enter 2st number: "));
+
+add(x,y);
+sub(x,y);
+mul(x,y);
+div(x,y);
+
+
+</script>
+</head>
+<body>
+
+<h2>Enter a number</h2>
+
+<p>Number:       .. <input type="text" id ="n"> </input> </p>
+<p>It's square: <input type="text" id ="m"> </input> </p>
+<p><button onclick="f()"> Calculate</button> </p>
+
+
+</body>
+</html>
+

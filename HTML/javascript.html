@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+name=prompt("Please enter your name: ");
+
+
+document.cookie= "username = cukki; expires=expires=Thu, 31 Dec 2020 00:00:00 UTC";
+
+d = new Date();
+n = d.getHours();
+if(n<12)
+{	greeting = "morning"
+}
+else if(n<17)
+{	greeting = "afternoon"
+}
+else
+{	greeting = "evening"
+}
+
+document.write("<h3>Good " + greeting + ", " + name + ".</h3> Welcome to Javascript </br>");
+
+var x = document.cookie;
+document.write(x);
+
+</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

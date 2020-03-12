@@ -1,0 +1,131 @@
+<html>
+
+<head>
+	<script>
+	
+	function intro()
+	{
+		first = prompt("Enter first Name")
+		last = prompt("Enter last Name")
+		
+		document.write("<body background='bg.jpg'><h1> Hello " + first + " " + last + "!</h1>")
+		document.write("<h3> Welcome to CUTN! </h3>")
+	}
+	
+	var SI, principal, rate, time;
+	
+	function calc()
+	{	
+		a = prompt("Enter first number")
+		b = prompt("Enter second number")
+	
+		document.write( "<body background='bg.jpg'> a * b = ", a*b, "<br> a/b = ", a/b)
+	}
+	
+	function greatest()
+	{	
+		a = prompt("Enter first number")
+		b = prompt("Enter second number")
+		c = prompt("Enter third number")
+		document.write( "<body background='bg.jpg'> Greatest Number = ", Math.max(a,b,c))
+	}
+	
+	function grade()
+	{	
+		a = prompt("Enter Grade: ")
+		switch(a)
+		{
+			case 'A','a': document.write( "<body background='bg.jpg'> Good!!!"); break;
+			case 'B','b': document.write( "<body background='bg.jpg'> Fair!!"); break;
+			case 'D','d': document.write( "<body background='bg.jpg'> Worse"); break;
+			case 'C','c': document.write( "<body background='bg.jpg'> Bad!"); break;
+			default: document.write( "<body background='bg.jpg'> Unknown grade :("); break;
+		}
+	}
+	
+	function loop()
+	{	i = 50
+		while(i>0)
+		{
+			document.write( "<body background='bg.jpg'>", i, ", ");
+			i--;
+		}
+	}
+		
+	function prime()
+	{	i = 999
+		while(i>99)
+		{	j = i-1;
+			flag=0;
+			while(j>1)
+			{
+				if(i%j==0)
+				{	flag=1;
+					break;
+				}
+				else
+					j--;
+			}
+			if(flag==0)
+			{
+				document.write( "<body background='bg.jpg'> Greatest Prime = ", i, ", ");
+				break;
+			}
+			i--;
+		}
+
+	}
+	
+	function mult()
+	{	document.write( "<body background='bg.jpg'>");
+		for(i=1;i<=100;i++)
+		{
+			if(i%5==0)
+				document.write( i , ", ");
+		}
+	}
+	
+	function col()
+	{	document.getElementByID("cl").color=#FFFF00;
+	}
+	
+	</script>
+</head>
+
+
+<body background="bg.jpg" >
+
+	<p id="in" style="display: block; background-color:#AAFFAA; width:80" onclick=intro()>
+			Introduction
+	</p>
+	
+	<p id="ca" style="display: block; background-color:#FFFFAA; width:80" onclick=calc()>
+			Calculation
+	</p>
+	<p id="no" style="display: block; background-color:#AAAAFF; width:80" onclick=greatest()>
+			Greatest No
+	</p>
+	<p id="gr" style="display: block; background-color:#AAFFFF; width:80" onclick=grade()>
+			Grade
+	</p>
+		<p id="lp" style="display: block; background-color:#FFAAFF; width:80" onclick=loop()>
+			Loop
+	</p>	
+	</p>
+		<p id="pr" style="display: block; background-color:#FFAAAA; width:80" onclick=prime()>
+			Prime
+	</p>	
+		</p>
+		<p id="mu" style="display: block; background-color:#AAAAAA; width:80" onclick=mult()>
+			5 Multiples
+	</p>	
+	</p>	
+		</p>
+		<p id="cl" style="display: block; background-color:#FFAAFF; width:80" onclick=col()>
+			Change Colour
+	</p>	
+
+	
+
+</body>
+</html>

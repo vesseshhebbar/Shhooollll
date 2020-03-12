@@ -1,0 +1,183 @@
+
+#grow
+{
+	width:100px;
+	height:35px;
+	
+	padding: 15px 0 0 0;
+	text-align: center;	
+	
+	
+	background-color:#AAAAFF;
+	font-size:15;
+	transition:1s;
+	margin:auto
+}
+
+#grow:hover
+{
+	transform: scale(2)	;
+}
+
+#growRotate
+{
+	width:100px;
+	height:35px;
+	
+	padding: 15px 0 0 0;
+	text-align: center;
+	
+	background-color:#AAFFFF;
+	font-size:15;
+	transition:2s;
+	margin:auto
+}
+
+#growRotate:hover
+{
+	transform: scale(2)	 rotate(90deg);
+}
+
+#Fade
+{
+	width:100px;
+	height:35px;
+	background-color:#FFAAFF;
+
+	padding: 15px 0 0 0;
+	text-align: center;
+	
+	font-size:15;
+	transition:2s;
+
+}
+
+#Fade:hover
+{
+	color:white;
+	background-color:white;
+}
+
+#Hang
+{
+	width:100px;
+	height:35px;
+	
+	padding: 15px 0 0 0;
+	text-align: center;	
+	
+	background-color:#AAFFAA;
+	font-size:15;
+
+	position: relative;
+
+}
+
+#Hang:hover
+{
+	animation-name: hangIni, hangLoop;
+	animation-duration: 0.5s, 1s;
+	animation-iteration-count:1, infinite;
+	animation-delay:0s, 0.5s;
+	
+}
+
+#Bounce
+{
+	width:100px;
+	height:35px;
+	
+	padding: 15px 0 0 0;
+	text-align: center;	
+	
+	background-color:#FFAAAA;
+	font-size:15;
+	
+	position:relative;
+}
+
+#Bounce:hover
+{
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#iconBounce
+{
+	width:140px;
+	height:35px;
+	
+	padding: 15px 0 0 0;
+	text-align: center;	
+	
+	background-color:#FFFFAA;
+	font-size:15;
+	
+	position:relative;
+}
+
+#icon
+{
+	position:relative;
+}
+
+#uLine
+{
+	width:120px;
+	height:30px;
+	
+	padding: 15px 0 0 0;
+	text-align: center;	
+	
+	background-color:#4444FF;
+	font-size:15;
+	color:white;
+	position:relative;
+	
+	transition:10;
+	
+	border-bottom:5px;
+	border-bottom-style:solid;
+	border-bottom-color:#4444FF;
+}
+
+#uline:hover
+{
+	border-bottom:5px;
+	border-bottom-style:solid;
+	border-bottom-color:red;
+}
+
+#iconBounce:hover  #icon
+{
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hangIni
+{
+	0%	{top: 0;}
+	100% {top: 20;}
+}
+
+@keyframes hangLoop
+{
+	0%		{top: 20;}
+	50%		{top: 10;}
+	100%	{top: 20;}
+
+}
+
+@keyframes bounce
+{
+	0%		{top: 0;}
+	20%		{top: 20;}
+	30%		{top: 14;}
+	40%		{top: 20;}
+	48%	    {top: 16;}
+	56%	    {top: 20;}
+	60%	    {top: 18;}
+	100%	{top: 20;}
+}

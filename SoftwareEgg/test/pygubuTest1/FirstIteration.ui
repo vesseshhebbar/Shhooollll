@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="mainwindow">
+    <property name="background">#dee2cf</property>
+    <property name="height">200</property>
+    <property name="highlightbackground">#dee2cf</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="welcome">
+        <property name="background">#dee2cf</property>
+        <property name="font">{Algerian} 20 {}</property>
+        <property name="foreground">#9f0000</property>
+        <property name="justify">center</property>
+        <property name="padx">0</property>
+        <property name="pady">0</property>
+        <property name="state">normal</property>
+        <property name="text" translatable="yes">Welcome to Password Manager!</property>
+        <bind add="" handler="callback" sequence="" />
+        <bind add="" handler="cllback" sequence="&lt;1&gt;" />
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">2</property>
+          <property name="padx">15</property>
+          <property name="pady">15</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="login_Frame">
+        <property name="background">#dee2cf</property>
+        <property name="font">{Comic Sans MS} 16 {}</property>
+        <property name="foreground">#527def</property>
+        <property name="height">200</property>
+        <property name="highlightbackground">#84bdb6</property>
+        <property name="highlightcolor">#bca085</property>
+        <property name="highlightthickness">0</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Login</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="padx">15</property>
+          <property name="pady">15</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">w</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="usernameLabel">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#2b549f</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Enter Username:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="usernameEntry">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#335697</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="passwordLabel">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#2b549f</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Enter Password:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="passwordEntry">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="show">*</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <bind add="" handler="callback" sequence="" />
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="register_Frame">
+        <property name="background">#dee2cf</property>
+        <property name="font">{Comic Sans MS} 16 {}</property>
+        <property name="foreground">#527def</property>
+        <property name="height">200</property>
+        <property name="highlightbackground">#84bdb6</property>
+        <property name="highlightcolor">#bca085</property>
+        <property name="highlightthickness">0</property>
+        <property name="relief">groove</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Register</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="padx">15</property>
+          <property name="pady">15</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">w</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="newUsernameLabel">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#2b549f</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Enter New Username:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="newUsernameEntry">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#335697</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="newPasswordLabel">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#2b549f</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Enter New Password:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="newPasswordEntry">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="show">*</property>
+            <property name="state">normal</property>
+            <property name="takefocus">true</property>
+            <bind add="" handler="callback" sequence="" />
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="confirmPasswordLabel">
+            <property name="cursor">arrow</property>
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="foreground">#2b549f</property>
+            <property name="justify">center</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Confirm Password:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="confirmPasswordEntry">
+            <property name="font">{Comic Sans MS} 11 {}</property>
+            <property name="show">*</property>
+            <property name="state">disabled</property>
+            <property name="takefocus">true</property>
+            <property name="validate">none</property>
+            <bind add="" handler="callback" sequence="" />
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">15</property>
+              <property name="pady">15</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

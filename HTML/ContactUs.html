@@ -1,7 +1,23 @@
-
 <head>
 
 <style>
+
+.grid-container
+{
+    display: inline-grid;
+    grid-template-columns: auto auto;  
+    padding:10px;
+}
+
+.grid-item {
+  padding: 10px;
+}
+.item1
+{
+    grid-column:2/3;
+    grid-row:1/3;
+    padding:10px;
+}
 
 </style>
 
@@ -18,14 +34,19 @@
 <br> The quick brown fox jumped over the lazy Dogs.  </p>
 
 <form id="MyForm" >
+<div class="grid-container">
+    <div class="grid-item">
+        <input type="text" class="textbox" style="padding:10px;" id="Name" placeholder="Name">  </div>
+    <div class="grid-item">
+        <input type="text" class="textbox" style="padding:10px;" id="Subject" placeholder="Subject"> </div>
+    <div class="grid-item">
+        <input type="text" class="textbox" style="padding:10px;" id="Email" placeholder="Email"> </div>
 
-<input type="text" class="textbox" style="padding:10px;" id="Name" placeholder="Name"> <br>
-<input type="text" class="textbox" style="padding:10px;" id="Email" placeholder="Email"> <br>
-<input type="text" class="textbox" style="padding:10px;" id="Subject" placeholder="Subject"> <br>
-
-<input type="textarea" class="textbox" style="padding:10px;" id="Message" placeholder="Message"> <br>
-<input type="submit" class="textbox" style="padding:10px;" id="SEND" value="SEND"> <br>
-
+    <div class="item1">
+        <textarea style="padding:10px; " cols=100  rows=4 id="Message" placeholder="Message"> </textarea> </div>
+    <div class="grid-item">
+        <input type="submit" class="textbox" style="padding:10px;width:734px; height:38px;background-color:white; border-style:solid; border-color:#00AAFF; color:#00AAFF;" id="SEND" value="SEND"> </div>
+</div>
 </form>
 
 </font>

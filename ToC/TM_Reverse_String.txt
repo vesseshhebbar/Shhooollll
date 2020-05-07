@@ -1,0 +1,103 @@
+name: Reverse_String
+init: q0
+accept: qf
+
+//-------DELTA FUNCTION:
+//[current_state],[read_symbol]
+//[new_state],[write_symbol],[>|<|-]
+
+q0, a
+qacr, X, >
+
+q0, b
+qbcr, X, >
+
+q0, #
+q0, #, >
+
+qacr, a
+qacr, a, >
+
+qacr, b
+qacr, b, >
+
+qacr, #
+qacr2,#,<
+
+qacr, A
+qacr2, A, <
+
+qacr, B
+qacr2, B, <
+
+qbcr, a
+qbcr, a, >
+
+qbcr, b
+qbcr, b, >
+
+qbcr, #
+qbcr2, #, <
+
+qbcr, A
+qbcr2, A, <
+
+qbcr, B
+qbcr2, B, <
+
+qacr2, a
+qacl, A, <
+
+qacr2, b
+qbcl, A, <
+
+qacr2, X
+qacr2, A, -   // Make use of existing states
+
+qbcr2, X
+qacr2, B, -    // Make use of existing states
+
+qbcr2, a
+qacl, B, <
+
+qbcr2, b
+qbcl, B, <
+
+qacl, a
+qacl, a, <
+
+qacl, b
+qacl, b, <
+
+qacl, X
+q0, A, >
+
+qbcl, a
+qbcl, a, <
+
+
+qbcl, b
+qbcl, b, <
+
+qbcl, X
+q0, B, >
+
+
+qacr2, A
+qacr2, A, >
+
+qacr2, B
+qacr2, B, >
+
+qacr2, #
+qe, #, <
+
+qe, A
+qe, a, <
+
+qe, B
+qe, b, <
+
+qe, #
+qf, #, -
+

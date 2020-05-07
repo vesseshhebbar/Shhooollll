@@ -1,0 +1,100 @@
+name: w#w#w
+init: q
+accept: qf
+
+// Program extendable upto any number of w#w#w
+
+// make sure only 3 w exist.
+q, a
+q, a, >
+
+q, b
+q, b, >
+
+q, #
+q1, #, >
+
+q1, a
+q1, a, >
+
+q1, b
+q1, b, >
+
+q1, #
+q2, #, >
+
+q2, a
+q2, a, >
+
+q2, b
+q2, b, >
+
+q2, _
+q_go_left, _, <
+
+// start checking.
+q0, a
+qa, X, >
+
+q0, b
+qb, X, >
+
+q0, X
+q0, X, >
+
+q0, #
+q0, #, >
+
+qa, a
+qa, a, >
+
+qa, b
+qa, b, >
+
+qb, a
+qb, a, >
+
+qb, b
+qb, b, >
+
+qa, #
+qa2, #, >
+
+qb, #
+qb2, #, >
+
+qa2, a
+qa, X, >
+
+qb2, b
+qb, X, >
+
+qa2, X
+qa2, X, >
+
+qb2, X
+qb2, X, >
+
+qa, _
+q_go_left, _, <
+
+qb, _
+q_go_left, _, <
+
+q_go_left, a
+q_go_left, a, <
+
+q_go_left, b
+q_go_left, b, <
+
+q_go_left, X
+q_go_left, X, <
+
+q_go_left, #
+q_go_left, #, <
+
+q_go_left, _
+q0, _ ,>
+
+q0, _
+qf, _, -

@@ -1,0 +1,71 @@
+name: Palindrome
+init: q0
+accept: qf
+
+//-------DELTA FUNCTION:
+//[current_state],[read_symbol]
+//[new_state],[write_symbol],[>|<|-]
+
+q0, a
+qacr, X, >
+
+q0, b
+qbcr, X, >
+
+q0, #
+q0, #, >
+
+q0, X
+qf, X, -
+
+qacr, a
+qacr, a, >
+
+qacr, b
+qacr, b, >
+
+qacr, #
+qacr2,#,<
+
+qacr, X
+qacr2, X, <
+
+qacr, X
+qacr2, X, <
+
+qbcr, a
+qbcr, a, >
+
+qbcr, b
+qbcr, b, >
+
+qbcr, #
+qbcr2, #, <
+
+qbcr, X
+qbcr2, X, <
+
+qbr, X
+qbcr2, X, <
+
+qacr2, a
+q_go_left, X, <
+
+qbcr2, b
+q_go_left, X, <
+
+q_go_left, a
+q_go_left, a, <
+
+q_go_left, b
+q_go_left, b, <
+
+q_go_left, X
+q0, X, >
+
+qacr2, X
+qf, X, -
+
+qbcr2, X
+qf, X, -
+

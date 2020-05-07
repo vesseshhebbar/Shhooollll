@@ -1,0 +1,32 @@
+name: Concat
+init: q0
+accept: qf
+
+// seperator #
+
+q0, a
+q0, a, >
+
+q0, b
+q0, b, >
+
+q0, #
+q1, #, >
+
+q1, a
+qa, #, <
+
+q1, b
+qb, #, <
+
+qa, #
+q0, a, >
+
+qb, #
+q0, b, >
+
+q1, _
+q2, _, <
+
+q2, #
+qf, _, -

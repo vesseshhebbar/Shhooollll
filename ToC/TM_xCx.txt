@@ -1,0 +1,70 @@
+name: xCx
+init: q0
+accept: qf
+
+//-------DELTA FUNCTION:
+//[current_state],[read_symbol]
+//[new_state],[write_symbol],[>|<|-]
+
+q0, a
+qar, X, >
+
+q0, b
+qbr, X, >
+
+q0, #
+q0, #, >
+
+qar, a
+qar, a, >
+
+qar, b
+qar, b, >
+
+qar, c
+qacr, c, >
+
+qacr, a
+q_go_left, Y, <
+
+qacr, Y
+qacr, Y, >
+
+qbr, a
+qbr, a, >
+
+qbr, b
+qbr, b, >
+
+qbr, c
+qbcr, c, >
+
+qbcr, b
+q_go_left, Y, <
+
+qbcr, Y
+qbcr, Y, >
+
+
+q_go_left, a
+q_go_left, a, <
+
+q_go_left, b
+q_go_left, b, <
+
+q_go_left, Y
+q_go_left, Y, <
+
+q_go_left, c
+q_go_left, c, <
+
+q_go_left, X
+q0, X, >
+
+
+
+q0,c
+qf,c,-
+
+
+

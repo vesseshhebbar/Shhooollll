@@ -1,0 +1,112 @@
+name: Division
+init: q
+accept: qf
+
+q, a
+q, a, >
+q, #
+q, #, >
+q, _
+q0, #, <
+
+q0, a
+q1, X, <
+
+q1, a
+q1, a, <
+
+q1, #
+q2, #, <
+
+q2, Y
+q2, Y, <
+
+q2, a
+go_right, Y, >
+
+go_right, X
+q0, X, <
+
+go_right, Y
+go_right, Y, >
+
+go_right, #
+go_right, #, >
+
+go_right, a
+go_right, a, >
+
+q0, #
+add, #, >
+
+add, #
+add, #, >
+
+add, a
+add, a, >
+
+add, X
+add, a, >
+
+add, _
+done, a, <
+
+done, a
+done, a, <
+
+done, #
+q0, #, <
+
+q2, _
+remainder, _, >
+
+remainder, Y
+remainder, Y, >
+
+remainder, #
+remainder, #, >
+
+remainder, a
+remainder, a, >
+
+remainder, X
+add_sep, a, >
+
+add_sep, X
+add_sep, X, >
+
+add_sep, #
+add_sep, #, >
+
+add_sep, a
+add_sep, a, >
+
+add_sep, _
+calc_rem, #, <
+
+calc_rem, a
+calc_rem, a, <
+
+calc_rem, #
+calc_rem, #, <
+
+calc_rem, Z
+calc_rem, Z, <
+
+calc_rem, X
+add_rem, Z, >
+
+add_rem, a
+add_rem, a, >
+
+add_rem, #
+add_rem, #, >
+
+add_rem, Z
+add_rem, Z, >
+
+add_rem, _
+calc_rem, a, <
+
+calc_rem, Y
+qf, Y, -

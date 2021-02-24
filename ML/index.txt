@@ -1,1 +1,57 @@
-test
+ML definition
+ML process
+Abstraction
+Generalisation
+Well Posed learn algol. What
+Why and How
+Types of ML
+
+
+Supervised Classification
+Supervised Regression
+Unsup learn
+
+Reinforcement Learn
+Not to be solved using ML
+ML Applications, Languages, tools
+Issues with ML
+SL, UL, Rein Differences
+
+Linear Regression
+
+Simple Lin Reg
+
+
+
+
+
+    Interpretation of Intercept
+    Multiple Lin Reg
+    Assumptions in LR
+Logistic Regression
+
+Purpose of Logistic Regression
+Why LinR can't be used for Classf
+
+
+
+Cost Function or Optimiser
+Sigmoid 
+SVM
+
+How to choose Best Hyperplane, SVM Kernel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -47,8 +47,8 @@ Calculating Marginal Distance
 Decision Trees
 Building Decision Tree
 
-
-Searching Decision Tree
+CGPA Example,
+Searching Decision Tree, exhaustive search
 Branch and Bound Search 
 Entropy
 Features in CGPA example

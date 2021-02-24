@@ -40,18 +40,18 @@ Sigmoid
 SVM
 
 How to choose Best Hyperplane, SVM Kernel
+What are Support Vectors, Marginal Distance
+Y value
+Calculating Marginal Distance
+
+Decision Trees
+Building Decision Tree
 
 
+Searching Decision Tree
+Branch and Bound Search 
+Entropy
+Features in CGPA example
 
-
-
-
-
-
-
-
-
-
-
-
+Information Gain
 
